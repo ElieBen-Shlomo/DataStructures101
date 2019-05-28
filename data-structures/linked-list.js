@@ -28,13 +28,17 @@ class LinkedList {
         if (nextNode != null && prevNode != null) {
             prevNode.next = nextNode
             nextNode.prev = prevNode
-        } else if (nextNode == null) {
+        } else if (nextNode == null && prevNode != null) {
             prevNode.next = null
-        } else if (prevNode == null) {
+        } else if (prevNode == null && nextNode != null) {
             this.head = nextNode
             nextNode.prev = null
+        } else if (prevNode == null && nextNode == null) {
+            this.head = null
+            this.tail = null
         }
     }
+    
 
     linkedSize() {
         function size(node, count) {
@@ -51,12 +55,29 @@ class LinkedList {
             console.log(node.data)
             if (node.next != null) print(node.next)
         }
-
         print(this.head)
     }
 }
 
+function addLists(lowerList, upperList) {
+    let joinedList = new LinkedList()
+    var node = lowerList.head
+    while (node != null) {
+        joinedList.addToLinkedHead(node.data)
+        node = node.next
+    }
+
+    node = upperList.head
+    while (node != null) {
+        joinedList.addToLinkedHead(node.data)
+        node = node.next
+    }
+    
+    return joinedList
+}
+
 module.exports = {
     LinkedList,
-    Node
+    Node,
+    addLists
 }
