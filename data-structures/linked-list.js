@@ -51,6 +51,11 @@ class LinkedList {
     }
 
     print() {
+        if (this.head == null) {
+            console.log("")
+            return
+        }
+
         function print(node) {
             console.log(node.data)
             if (node.next != null) print(node.next)
