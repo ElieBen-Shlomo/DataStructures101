@@ -27,14 +27,6 @@ class Queue extends DataStructures.LinkedList {
     }
 }
 
-let blah = new Queue()
-blah.add(0)
-blah.add(1)
-blah.add(2)
-blah.add(3)
-
-blah.remove()
-
-blah.print()
-console.log("")
-console.log(blah.peek())
+module.exports = {
+   Queue
+}

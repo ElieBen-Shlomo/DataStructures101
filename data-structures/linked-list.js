@@ -57,6 +57,16 @@ class LinkedList {
         }
         print(this.head)
     }
+
+    size() {
+        var count = 0
+        var node = this.head
+        while (node != null) {
+            count++
+            node = node.next
+        }
+        return count
+    }
 }
 
 function addLists(lowerList, upperList) {

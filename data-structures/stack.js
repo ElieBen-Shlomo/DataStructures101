@@ -4,7 +4,7 @@ class Stack extends DataStructures.LinkedList {
     pop() {
         let item = this.head 
         this.head = item.next
-        return item
+        return item.data
     }
 
     push(data) {
@@ -18,12 +18,9 @@ class Stack extends DataStructures.LinkedList {
     isEmpty() {
         return this.head == null
     }
+
 }
 
-let blah = new Stack()
-blah.push(0)
-blah.push(1)
-blah.push(2)
-blah.push(3)
-
-blah.print()
+module.exports = {
+    Stack
+}
