@@ -9,7 +9,6 @@ class QueueFromStack extends StackStructure.Stack {
     }
 
     dequeue() {
-
         if (this.tempStack.size() == 0) {
             while (this.head != null) {
                 this.tempStack.push(this.pop())
