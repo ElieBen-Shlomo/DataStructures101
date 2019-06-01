@@ -12,13 +12,13 @@ class Stack extends DataStructures.LinkedList {
     }
 
     peek() {
-        return this.head.data
+        if (this.head != null) return this.head.data
+        else return null
     }
 
     isEmpty() {
         return this.head == null
     }
-
 }
 
 module.exports = {
