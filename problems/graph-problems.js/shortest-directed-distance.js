@@ -16,8 +16,6 @@ n2.addNeighbors([n3])
 n3.addNeighbors([n4])
 n4.addNeighbors([root])
 
-const nodes = []
-
 function checkPath(node, destination) {
     function temp(node, destination) {
         if (node != null && node.visited == false) {
@@ -32,7 +30,6 @@ function checkPath(node, destination) {
             }
         }
     }
-
     return temp(node, destination) == true ? true : false
 }
 
