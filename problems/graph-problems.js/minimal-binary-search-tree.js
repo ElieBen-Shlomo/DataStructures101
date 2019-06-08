@@ -1,10 +1,12 @@
-const DirectedNode = require("../../data-structures/DirectedGraph").DirectedNode
-const BinaryNode = require("../../data-structures/DirectedGraph").BinaryNode
-const Tree = require("../../data-structures/DirectedGraph").Tree
-
 // Converting a sorted array in to a binary search tree of minimal height
-//const sortedArray = [1,2,5,7,9,11,20]
-const sortedArray = [1,2,3]
+
+class BinaryNode {
+    constructor(data, left, right) {
+        this.data = data
+        this.left = left
+        this.right = right
+    }
+}
 
 function getMedianIndex(array) {
     length = array.length
@@ -18,21 +20,14 @@ function splitList(array, index) {
     return [first, last]
 }
 
-function minimalTree(array) {
-    function getNode(arr) {
-        if (arr.length > 0) {
-            const index = getMedianIndex(arr)
-            twoLists = splitList(arr, index)
-            leftList = twoLists[0]
-            rightList = twoLists[1]
-            return new BinaryNode(arr[index], getNode(leftList), getNode(rightList))
-        } 
-    }
-
-    return new Tree(getNode(array)) 
+function getBST(arr) {
+    if (arr.length > 0) {
+        const index = getMedianIndex(arr)
+        const twoLists = splitList(arr, index)
+        const leftList = twoLists[0]
+        const rightList = twoLists[1]
+        return new BinaryNode(arr[index], getBST(leftList), getBST(rightList))
+    } 
 }
 
-const tree = minimalTree(sortedArray) 
-tree.printElementsPreOrder()
-
-// For some reason, this recursive function never hits the getNode(rightList)
+console.log(getBST([1,2,33,4,5,62]))
