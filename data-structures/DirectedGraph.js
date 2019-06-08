@@ -10,6 +10,34 @@ class DirectedNode {
     } 
 }
 
+class BinaryNode {
+    constructor(data, left, right) {
+        this.data = data
+        this.left = left
+        this.right = right
+    }
+}
+
+class Tree {
+    constructor(root) {
+        this.root = root
+    }
+
+    printElementsPreOrder() {
+        function printSubNodes(node) {
+            if (node != null ) {
+                console.log(node.data)
+                printSubNodes(node.left)
+                printSubNodes(node.right)
+            }
+        }
+
+        printSubNodes(this.root)
+    }
+}
+
 module.exports = {
-    DirectedNode
+    DirectedNode,
+    BinaryNode,
+    Tree
 }
