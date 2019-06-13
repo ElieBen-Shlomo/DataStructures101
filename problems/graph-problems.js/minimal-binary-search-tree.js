@@ -30,4 +30,6 @@ function getBST(arr) {
     } 
 }
 
-console.log(getBST([1,2,33,4,5,62]))
+module.exports = {
+    getBST
+}
