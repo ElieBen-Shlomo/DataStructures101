@@ -7,47 +7,37 @@ const treeRoot = getBST(arr)
 
 function isBST(root) {
     function isBSTAuxillary(node, min, max) {
-        console.log(node.data)
         if (node == null) return true
 
         const doesLeftNodeExist = node.left != null
         const doesRightNodeExist = node.right != null
 
+        console.log('data: ' + node.data + ', min: ' + min + ', max: ' + max)
+
         returnValue = null
         if (doesLeftNodeExist && !doesRightNodeExist) {
-            const isInBounds = node.left.data >= min
+            const newMax = node.data
+            const isInBounds = node.left.data >= min && node.left.data < newMax
             returnValue = 
-                isInBounds ? isBSTAuxillary(node.left, min, node.data) : false
+                isInBounds ? isBSTAuxillary(node.left, min, newMax) : false
         } else if (!doesLeftNodeExist && doesRightNodeExist) {
-            console.log('right')
-            const isInBounds = node.right.data < max && node.right.data > min // we need to do this extra logic for the other cases 
+            const newMin = node.data
+            const isInBounds = node.right.data < max && node.right.data > newMin
             returnValue = 
-                isInBounds ? isBSTAuxillary(node.right, node.data, max) : false
+                isInBounds ? isBSTAuxillary(node.right, newMin, max) : false
         } else if (doesLeftNodeExist && doesRightNodeExist) {
-            console.log
-            const isInBoudns = node.left.data >= min && node.right.data < max
+            const isInBounds = node.left.data >= min && node.right.data < max
             returnValue = 
-                isInBoudns ? isBSTAuxillary(node.left, min, node.data) &&
+                isInBounds ? isBSTAuxillary(node.left, min, node.data) &&
                     isBSTAuxillary(node.right, node.data, max) : false
         } else {
             return true
         }
 
         return returnValue
-
-        console.log(min + ' , ' + max)
-        console.log(node)
-        return (node == null) ? true : 
-            (node.left.data > min && node.right.data < max) ?
-                isBSTAuxillary(node.left, min, node.data) && 
-                isBSTAuxillary(node.right, node.data, max) :
-                    false
     }
 
-    return isBSTAuxillary(root, Number.MIN_VALUE, Number.MAX_VALUE)
+    return isBSTAuxillary(root, -Number.MAX_VALUE, Number.MAX_VALUE)
 }
 
-treeRoot.right.right = new BinaryNode(-100)
 console.log(isBST(treeRoot))
-
-// unfinished
