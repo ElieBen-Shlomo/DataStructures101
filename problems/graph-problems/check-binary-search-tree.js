@@ -2,9 +2,6 @@ const Node = require("../../data-structures/graphs.js").BinaryNode
 const getBST = require("./minimal-binary-search-tree").getBST
 const BinaryNode = require("../../data-structures/graphs.js").BinaryNode
 
-const arr = [1,2,3]
-const treeRoot = getBST(arr)
-
 function isBST(root) {
     function isBSTAuxillary(node, min, max) {
         if (node == null) return true
@@ -27,6 +24,7 @@ function isBST(root) {
                 isInBounds ? isBSTAuxillary(node.right, newMin, max) : false
         } else if (doesLeftNodeExist && doesRightNodeExist) {
             const isInBounds = node.left.data >= min && node.right.data < max
+                && node.left.data < node.data && node.right.data >= node.data
             returnValue = 
                 isInBounds ? isBSTAuxillary(node.left, min, node.data) &&
                     isBSTAuxillary(node.right, node.data, max) : false
@@ -40,4 +38,12 @@ function isBST(root) {
     return isBSTAuxillary(root, -Number.MAX_VALUE, Number.MAX_VALUE)
 }
 
-console.log(isBST(treeRoot))
+const root = new BinaryNode(20)
+root.left = new BinaryNode(8)
+root.right = new BinaryNode(22)
+root.left.left = new BinaryNode(4)
+root.left.right = new BinaryNode(12)
+root.left.right.left = new BinaryNode(10)
+root.left.right.right = new BinaryNode(13)
+
+console.log(isBST(root))
