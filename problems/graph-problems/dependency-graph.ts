@@ -21,8 +21,7 @@ const graph: Array<Tuple> = [
     new Tuple('b', 'd'), 
     new Tuple('f', 'a'),
     new Tuple('f', 'b'),
-    new Tuple('e', 'c'),
-    new Tuple('c', 'f')
+    new Tuple('e', 'c')
 ]
 
 // Function Definition
@@ -35,10 +34,6 @@ function contains<T>(list: Array<T>, e: T) {
     return list.indexOf(e) > -1
 }
 
-function removeDuplicates<T>(list: Array<T>): Array<T> {
-    return Array.from(new Set(list))
-}
-
 function setDifference<T>(list1: Array<T>, list2: Array<T>) {
     //list1 - list2
     return list1.filter(e => !contains(list2, e))
@@ -49,11 +44,14 @@ function buildOrder(data: Data): Array<String> {
     const graph = data[0]
     const nodes = data[1]
 
-    const dependentNodes = removeDuplicates(graph.map(tuple => tuple.y))
-    const nodesThatHaveDependencies = nodes.filter(n => dependentNodes.indexOf(n) > -1)
+    const dependentNodes = (graph.map(tuple => tuple.y))
+    const nodesThatHaveDependencies = nodes.filter(n => contains(dependentNodes, n))
     const graphPairsThatHaveDependencies = graph.filter(tuple => nodesThatHaveDependencies.indexOf(tuple.x) > -1)
-
+    
     const outerDependencies = setDifference(nodes, dependentNodes)
+
+    if (isEmpty(outerDependencies)) throw new Error('Circular dependency error')
+
     const graphWithOuterDependenciesRemoved: Data = [graphPairsThatHaveDependencies, nodesThatHaveDependencies]
     return outerDependencies.concat(buildOrder(graphWithOuterDependenciesRemoved))
 }
