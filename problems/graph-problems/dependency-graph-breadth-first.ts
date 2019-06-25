@@ -14,14 +14,15 @@ type Data = [Array<Tuple>, Array<String>]
 
 // Data initialisation
 
-const nodes = ['a', 'b' ,'c', 'd', 'e', 'f']
+const nodes = ['a', 'b' ,'c', 'd', 'e', 'f','g']
 const graph: Array<Tuple> = [
     new Tuple('d', 'e'), 
     new Tuple('a', 'd'), 
     new Tuple('b', 'd'), 
     new Tuple('f', 'a'),
     new Tuple('f', 'b'),
-    new Tuple('e', 'c')
+    new Tuple('a', 'e'),
+    new Tuple('g','c')
 ]
 
 // Function Definition
@@ -62,3 +63,5 @@ const data: Data = [graph, nodes]
 const order = buildOrder(data)
 
 console.log(order)
+
+export {}
