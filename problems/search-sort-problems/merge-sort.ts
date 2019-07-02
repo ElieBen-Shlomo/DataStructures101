@@ -1,31 +1,35 @@
 function merge<A>(s: A[], t: A[]): A[] {
+    function tPush() {
+      const head = tTemp[0]
+        tempArr.push(head)
+        tTemp.splice(0,1)
+    }
+
+    function sPush() {
+      const head = sTemp[0]
+        tempArr.push(head)
+        sTemp.splice(0,1)
+    }
+
     var sTemp = s.slice()
     var tTemp = t.slice()
 
-    const tempArr = []
+    const tempArr:A[] = []
     const totalLength = s.length + t.length
     while (tempArr.length < totalLength) {
       if (sTemp.length == 0 && tTemp.length != 0) {
-        const head = tTemp[0]
-        tempArr.push(head)
-        tTemp.splice(0,1)
+        tPush()
       } else if (sTemp.length != 0 && tTemp.length == 0) {
-        const head = sTemp[0]
-        tempArr.push(head)
-        sTemp.splice(0,1)
+        sPush()
       } else {
         if (sTemp[0] <= tTemp[0]) {
-          const head = sTemp[0]
-          tempArr.push(head)
-          sTemp.splice(0,1)
+          sPush()
         } else {
-          const head = tTemp[0]
-          tempArr.push(head)
-          tTemp.splice(0,1)
+          tPush()
         }
       }
     }
-    
+
     return tempArr
 }
 
