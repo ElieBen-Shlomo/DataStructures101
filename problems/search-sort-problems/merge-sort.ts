@@ -40,7 +40,7 @@ function mergeSort<A>(arr: A[]): A[] {
   
 
   var tempArr = arr.slice()
-  const middleIndex = Math.ceil(tempArr.length / 2) 
+  const middleIndex = Math.floor(tempArr.length / 2) 
   const leftArr = tempArr.splice(0,middleIndex)
   tempArr = arr.slice()
   const rightArr = tempArr.splice(middleIndex)
