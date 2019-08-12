@@ -14,6 +14,7 @@ object Main {
       subsetIndices.map(index =>
         set(index - 1)))
 
+    println(cache)
     println(powerSetValues)
   }
 
@@ -27,6 +28,7 @@ object Main {
     } else {
       val previousSubsets = powerSet(size - 1)
       val newSubsets = previousSubsets ++ previousSubsets.map(subset => subset ++ List(size))
+      cache += (size -> newSubsets)
       newSubsets
     }
   }
