@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc49334f-874e-4338-b7a9-cb8069a01df4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/.idea/test-env.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/.idea/libraries/sbt__org_scala_lang_scala_library_2_13_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/.idea/modules/test-env-build.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/.idea/modules/test-env.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/.idea/sbt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/.idea/scala_compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/build.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/build.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/config-classes/$459b9cdbf873c3e7b2ca$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/config-classes/$459b9cdbf873c3e7b2ca.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/config-classes/$459b9cdbf873c3e7b2ca.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/config-classes/$5203d945b52b01b6689e$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/config-classes/$5203d945b52b01b6689e.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/config-classes/$5203d945b52b01b6689e.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/config-classes/$643c356bb5efe60f79e7$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/config-classes/$643c356bb5efe60f79e7.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/config-classes/$643c356bb5efe60f79e7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/config-classes/$f02f6759af9be4938715$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/config-classes/$f02f6759af9be4938715.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/config-classes/$f02f6759af9be4938715.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/default/test-env-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/default/test-env-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-test-env-build-compile-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-test-env-build-compile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-test-env-build-optional.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-test-env-build-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-test-env-build-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-test-env-build-provided.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-test-env-build-runtime-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-test-env-build-runtime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-test-env-build-scala-tool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-test-env-build-test-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-test-env-build-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/ivy-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/ivy-report.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/$global/$global/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/$global/ivySbt/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/$global/projectDescriptors/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/$global/update/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/$global/$global/discoveredMainClasses/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/compile/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/compile/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/runtime/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/runtime/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/runtime/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/project/target/streams/runtime/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/src/main/scala/Main.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/.history" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/classes/Main$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/classes/Main$TuppleAdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/default/test-env$sources/0.1/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/default/test-env$sources/0.1/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/default/test-env_2.13/0.1/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/default/test-env_2.13/0.1/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env$sources-compile-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env$sources-compile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env$sources-optional.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env$sources-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env$sources-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env$sources-provided.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env$sources-runtime-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env$sources-runtime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env$sources-scala-tool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env$sources-test-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env$sources-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env_2.13-compile-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env_2.13-compile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env_2.13-optional.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env_2.13-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env_2.13-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env_2.13-provided.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env_2.13-runtime-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env_2.13-runtime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env_2.13-scala-tool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env_2.13-test-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/default-test-env_2.13-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/ivy-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/scala-2.13/resolution-cache/reports/ivy-report.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/$global/$global/dumpStructure/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.13/input_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.13/output_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/$global/ivySbt/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/$global/projectDescriptors/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/$global/update/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/$global/update/$global/streams/update_cache_2.13/inputs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/$global/update/$global/streams/update_cache_2.13/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/compile/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/compile/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/runtime/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/runtime/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/test/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/test/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/test/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problems/dynamic-programming/test-env/target/streams/test/unmanagedJars/$global/streams/export" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/project/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/scala_compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules/test-env.iml" />
+        <option value="$PROJECT_DIR$/.idea/modules/test-env-build.iml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_13_0_jar.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="98" />
+    <option name="y" value="23" />
+    <option name="width" value="1323" />
+    <option name="height" value="757" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="test-env" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-env" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-env" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-env" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-env" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-env" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-env" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-env" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="test-env" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="test-env" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="test-env [file:/Users/elieben-shlomo/Documents/Code101/test-env/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="test-env-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/build.sbt" value="3567851388" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="2567920773" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../Github/backend/legacy-backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../personal_repos/play_template/just-play-scala" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc49334f-874e-4338-b7a9-cb8069a01df4" name="Default Changelist" comment="" />
+      <created>1565604517501</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565604517501</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="98" y="23" width="1323" height="757" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980484" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Build" weight="0.32932332" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3263158" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="sbt" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/Main.scala</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/Main.scala</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/Main.scala</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/Main.scala</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
