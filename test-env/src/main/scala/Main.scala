@@ -1,35 +1,28 @@
-import scala.collection.mutable.Map
-// Find all subsets of a given set
+import com.sun.xml.internal.ws.dump.LoggingDumpTube.Position
+
+import scala.collection.mutable.ArrayBuffer
 
 object Main {
-  type Subset = List[Int]
-  type PowerSet = List[Subset]
-
-  private val set = List(1,5,12,2)
-  private val cache: Map[Int,PowerSet] = Map()
+  var state: List[ArrayBuffer[Int]] = List(ArrayBuffer(1,2,3,4,5), ArrayBuffer(), ArrayBuffer())
 
   def main(args: Array[String]) = {
-    val powerSetIndices = powerSet(set.length)
-    val powerSetValues = powerSetIndices.map(subsetIndices =>
-      subsetIndices.map(index =>
-        set(index - 1)))
-
-    println(cache)
-    println(powerSetValues)
+    moveStack(2, 0, 1)
+    println(state)
   }
 
-  def powerSet(size: Int): PowerSet= {
-
-    if (cache.contains(size)) {
-      cache(size)
-    } else if (size == 0) {
-      cache += (0 -> List())
-      List(List())
-    } else {
-      val previousSubsets = powerSet(size - 1)
-      val newSubsets = previousSubsets ++ previousSubsets.map(subset => subset ++ List(size))
-      cache += (size -> newSubsets)
-      newSubsets
+  def moveStack(stackIndex: Int, startPosition: Int, endPosition: Int): Unit = {
+    if (stackIndex == 1) {
+      val head = state(startPosition).head
+      state(endPosition).prepend(head)
+      state(startPosition).remove(0)
+    } else if (stackIndex == 2) {
+      moveStack(1, startPosition, otherPosition(startPosition, endPosition))
+      moveStack(1, startPosition, endPosition)
+      moveStack(1, otherPosition(startPosition, endPosition), endPosition)
     }
+  }
+
+  def otherPosition(position1: Int, position2: Int): Int= {
+    (3 - position1 - position2) % 3
   }
 }
